@@ -20,3 +20,5 @@
 .aw9-platform-row:not(.aw9-platform-coming) .aw9-platform-info>div:first-child{width:64px;height:64px}
 .aw9-platform-row:not(.aw9-platform-coming) .aw9-platform-text{width:100%}
 .aw9-platform-row:not(.aw9-platform-coming) .aw9-platform-play{width:100%;min-width:0}
+.aw9-platform-coming .aw9-platform-info{grid-template-columns:64px minmax(0,1fr)}
+.aw9-platform-coming .aw9-platform-info>div:first-child{width:64px;height:64px}
