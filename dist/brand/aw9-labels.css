@@ -43,3 +43,5 @@
 .aw9-platform-coming .aw9-platform-countdown{color:#ffe39b;background:#1d2117;border-color:#b7994e;box-shadow:inset 0 0 12px #e6b5440c}
 @keyframes aw9-launch-glow{0%,100%{box-shadow:0 0 0 1px #f4cb5820,0 4px 18px #edba3417}50%{box-shadow:0 0 0 1px #f4cb5840,0 4px 24px #edba3433}}
 @media(prefers-reduced-motion:reduce){.aw9-platform-coming{animation:none}}
+/* Platform names remain compact after removing their descriptions. */
+.aw9-platform-row:not(.aw9-platform-coming) .aw9-platform-text>div:first-child{display:block;min-height:0;max-height:none;margin:0;font-size:15px;line-height:20px;color:#fff;white-space:nowrap}
