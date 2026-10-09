@@ -1,2 +1,14 @@
 .aw9-platform-label{display:block;text-align:center;font-size:1.4rem;font-weight:800;line-height:1.4;color:inherit;margin-top:.4rem}
 @media(max-width:1279px){.aw9-platform-label{display:none}}
+
+/* Mobile platform rows: identity on the left, action on the right. */
+.aw9-mobile-platforms{gap:20px;padding:16px 8px}
+.aw9-platform-row{display:grid;grid-template-columns:minmax(0,1fr) max-content;align-items:center;gap:12px;width:100%;min-width:0;cursor:pointer}
+.aw9-platform-row .aw9-platform-info{display:grid;grid-template-columns:56px minmax(0,1fr);align-items:center;gap:12px;min-width:0}
+.aw9-platform-info>div:first-child{width:56px;height:56px}
+.aw9-platform-text{min-width:0;overflow:hidden}
+.aw9-platform-text>div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.aw9-platform-play{min-width:100px;padding:10px 12px;font-size:12px;line-height:1.2;white-space:nowrap}
+.aw9-platform-countdown{min-width:112px;padding:10px 12px;font-size:14px;line-height:1.2;white-space:nowrap}
+.aw9-platform-countdown .flex{flex-wrap:nowrap}
+@media(max-width:360px){.aw9-platform-row{gap:8px}.aw9-platform-row .aw9-platform-info{grid-template-columns:44px minmax(0,1fr);gap:8px}.aw9-platform-info>div:first-child{width:44px;height:44px}.aw9-platform-play{min-width:88px;padding:10px 8px}.aw9-platform-countdown{min-width:104px;padding:10px 8px;font-size:13px}}
