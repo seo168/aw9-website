@@ -22,3 +22,18 @@
 .aw9-platform-row:not(.aw9-platform-coming) .aw9-platform-play{width:100%;min-width:0}
 .aw9-platform-coming .aw9-platform-info{grid-template-columns:64px minmax(0,1fr)}
 .aw9-platform-coming .aw9-platform-info>div:first-child{width:64px;height:64px}
+/* Mobile card presentation, retaining the two-platform layout. */
+.aw9-mobile-platforms{background:transparent;padding:16px 0;gap:14px 12px}
+.aw9-platform-row{background:linear-gradient(145deg,#252c29,#1d2321);border:1px solid #354139;border-radius:16px;padding:18px 12px 12px;box-sizing:border-box;box-shadow:0 4px 14px #00000020}
+.aw9-platform-coming{padding:18px 12px;border-color:#4b603d;background:linear-gradient(110deg,#293326,#1e2621)}
+.aw9-platform-row:not(.aw9-platform-coming){gap:12px}
+.aw9-platform-row:not(.aw9-platform-coming) .aw9-platform-info{gap:12px}
+.aw9-platform-text>div:first-child{font-size:15px;line-height:20px;letter-spacing:.1px}
+.aw9-platform-text>div:last-child{font-size:11px;line-height:15px;color:#aab5ae;margin-top:4px}
+.aw9-platform-row:not(.aw9-platform-coming) .aw9-platform-text>div:last-child{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;min-height:30px;max-height:30px}
+.aw9-platform-play{border-radius:12px;min-height:38px;font-size:12px;background:linear-gradient(105deg,#b5ef48,#65e62f);box-shadow:0 2px 5px #00000026}
+.aw9-platform-row:not(.aw9-platform-coming)>div:last-child>div:last-child:not(.aw9-platform-play){display:none}
+.aw9-platform-countdown{border-radius:12px;background:#151c16;border:1px solid #587343;min-width:104px;font-variant-numeric:tabular-nums;letter-spacing:.3px;padding:12px 8px}
+.aw9-platform-coming .aw9-platform-info{gap:10px}
+.aw9-platform-coming .aw9-platform-text>div:last-child{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;max-height:30px;margin-top:0}
+@media(max-width:360px){.aw9-mobile-platforms{gap:12px 10px}.aw9-platform-row{padding:16px 10px 10px}.aw9-platform-coming{padding:16px 8px;gap:6px}.aw9-platform-coming .aw9-platform-info{gap:8px}.aw9-platform-countdown{min-width:94px;font-size:12px;padding:11px 6px}.aw9-platform-text>div:first-child{font-size:14px}}
