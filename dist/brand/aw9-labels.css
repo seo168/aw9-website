@@ -12,3 +12,11 @@
 .aw9-platform-countdown{min-width:112px;padding:10px 12px;font-size:14px;line-height:1.2;white-space:nowrap}
 .aw9-platform-countdown .flex{flex-wrap:nowrap}
 @media(max-width:360px){.aw9-platform-row{gap:8px}.aw9-platform-row .aw9-platform-info{grid-template-columns:44px minmax(0,1fr);gap:8px}.aw9-platform-info>div:first-child{width:44px;height:44px}.aw9-platform-play{min-width:88px;padding:10px 8px}.aw9-platform-countdown{min-width:104px;padding:10px 8px;font-size:13px}}
+/* Upcoming platform spans the row; available platforms form two columns. */
+.aw9-mobile-platforms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 12px}
+.aw9-platform-coming{grid-column:1/-1}
+.aw9-platform-row:not(.aw9-platform-coming){grid-template-columns:minmax(0,1fr);gap:12px;align-content:start}
+.aw9-platform-row:not(.aw9-platform-coming) .aw9-platform-info{grid-template-columns:minmax(0,1fr);justify-items:center;gap:8px;text-align:center}
+.aw9-platform-row:not(.aw9-platform-coming) .aw9-platform-info>div:first-child{width:64px;height:64px}
+.aw9-platform-row:not(.aw9-platform-coming) .aw9-platform-text{width:100%}
+.aw9-platform-row:not(.aw9-platform-coming) .aw9-platform-play{width:100%;min-width:0}
