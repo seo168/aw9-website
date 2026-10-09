@@ -37,3 +37,9 @@
 .aw9-platform-coming .aw9-platform-info{gap:10px}
 .aw9-platform-coming .aw9-platform-text>div:last-child{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;max-height:30px;margin-top:0}
 @media(max-width:360px){.aw9-mobile-platforms{gap:12px 10px}.aw9-platform-row{padding:16px 10px 10px}.aw9-platform-coming{padding:16px 8px;gap:6px}.aw9-platform-coming .aw9-platform-info{gap:8px}.aw9-platform-countdown{min-width:94px;font-size:12px;padding:11px 6px}.aw9-platform-text>div:first-child{font-size:14px}}
+/* Highlight the upcoming launch without changing the platform grid. */
+.aw9-platform-coming{position:relative;margin-top:12px;padding-top:26px;border:1px solid #d4ac4e;background:linear-gradient(115deg,#363020,#242a20 60%,#20271f);box-shadow:0 0 0 1px #f4cb5820,0 4px 22px #edba3420;animation:aw9-launch-glow 3s ease-in-out infinite}
+.aw9-platform-coming::before{content:"COMING SOON";position:absolute;top:-12px;left:16px;padding:5px 12px;border-radius:7px;background:linear-gradient(105deg,#ffe398,#e6b544);color:#241a06;font-size:11px;font-weight:800;line-height:14px;letter-spacing:1.2px;box-shadow:0 3px 10px #0004}
+.aw9-platform-coming .aw9-platform-countdown{color:#ffe39b;background:#1d2117;border-color:#b7994e;box-shadow:inset 0 0 12px #e6b5440c}
+@keyframes aw9-launch-glow{0%,100%{box-shadow:0 0 0 1px #f4cb5820,0 4px 18px #edba3417}50%{box-shadow:0 0 0 1px #f4cb5840,0 4px 24px #edba3433}}
+@media(prefers-reduced-motion:reduce){.aw9-platform-coming{animation:none}}
