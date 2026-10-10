@@ -45,3 +45,16 @@
 @media(prefers-reduced-motion:reduce){.aw9-platform-coming{animation:none}}
 /* Platform names remain compact after removing their descriptions. */
 .aw9-platform-row:not(.aw9-platform-coming) .aw9-platform-text>div:first-child{display:block;min-height:0;max-height:none;margin:0;font-size:15px;line-height:20px;color:#fff;white-space:nowrap}
+/* Fit the supplied portrait artwork and its live controls to the viewport. */
+.aw9-launch-modal{width:min(440px,94vw,calc((100svh - 70px)*.632));min-width:0!important;max-width:94vw!important;container-type:inline-size}
+.aw9-launch-art{width:100%;min-width:0!important;min-height:0!important}
+.aw9-launch-art>img{display:block;width:100%;height:auto}
+.aw9-launch-content{top:40%;bottom:6%;padding:0 10%;gap:0;justify-content:space-evenly}
+.aw9-launch-content>div,.aw9-launch-content>section,.aw9-launch-content>button{margin-top:0!important;margin-bottom:0!important}
+.aw9-launch-content>div{font-size:4cqw;line-height:1.2}
+.aw9-launch-content>div:first-child{font-size:5cqw;font-weight:800}
+.aw9-launch-content>section .flex.gap-\[1\.5rem\]{gap:3cqw}
+.aw9-launch-content>section .flex.flex-col>div{width:12cqw;height:12cqw;font-size:6cqw;border-color:#d8aa42;box-shadow:0 0 8px #d8aa4240}
+.aw9-launch-content>section p{font-size:3cqw;margin-top:1cqw}
+.aw9-launch-content>div.whitespace-nowrap{font-size:2.7cqw;padding:2cqw 1cqw}
+.aw9-launch-content>button{min-height:0;padding:2cqw!important;font-size:3.5cqw!important}
