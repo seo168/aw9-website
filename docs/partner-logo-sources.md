@@ -10,4 +10,4 @@
 - playtech: https://www.playtech.com/app/uploads/2023/08/logo-asset.svg
 - jdb: https://www.jdbgaming.com/images/logo.svg
 
-ARBET: awaiting brand identification; displayed as text, not an official logo.
+MINI: displayed as text following user replacement request; no verified official logo supplied.

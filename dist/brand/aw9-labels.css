@@ -70,3 +70,9 @@
 #aw9-partners>section>div{min-width:0}
 @media(max-width:639px){#aw9-partners .aw9-partner-logo{width:min(80%,13.2rem)}}
 #aw9-partners img[alt="EZUGI"]{background:#f6f6f6;border-radius:.5rem;padding:.7rem;box-sizing:border-box}
+
+/* Compact original-sized cards, with vector and lossless logos. */
+#aw9-partners>section>div{height:11rem;padding:1.5rem;box-sizing:border-box}
+#aw9-partners .aw9-partner-logo{width:76%;max-width:18rem;height:6rem;aspect-ratio:auto;object-fit:contain}
+#aw9-partners .aw9-partner-pending{width:76%;height:6rem;aspect-ratio:auto;font-size:2rem}
+@media(max-width:639px){#aw9-partners>section>div{height:8.5rem;padding:1.2rem}#aw9-partners .aw9-partner-logo{width:76%;max-width:12rem;height:4rem}#aw9-partners .aw9-partner-pending{height:4rem;font-size:1.8rem}}
