@@ -82,3 +82,8 @@
 .aw9-platform-coming .aw9-platform-text>div:last-child{display:block;-webkit-line-clamp:unset;max-height:none;overflow:visible;text-overflow:clip;white-space:normal;overflow-wrap:anywhere;line-height:1.4}
 
 .aw9-platform-pending{display:flex;align-items:center;justify-content:center;width:100%;min-height:38px;padding:10px 12px;border:1px solid #58615b;border-radius:12px;background:#343d37;color:#cbd1cc;font-size:12px;font-weight:800;line-height:1.2;cursor:default}
+
+/* ET7 has its own launch date; AW9 retains the primary gold treatment. */
+.aw9-platform-coming.aw9-platform-secondary{border-color:#53635b;background:linear-gradient(115deg,#28312c,#202722);box-shadow:none;animation:none;cursor:default}
+.aw9-platform-coming.aw9-platform-secondary::before{background:#49594f;color:#eef4ef;box-shadow:none}
+.aw9-platform-coming.aw9-platform-secondary .aw9-platform-countdown{color:#d9e6dd;background:#202823;border-color:#65786b;box-shadow:none;cursor:default}
