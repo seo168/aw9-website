@@ -80,3 +80,5 @@
 .aw9-platform-coming .aw9-platform-text{overflow:visible}
 .aw9-platform-coming .aw9-platform-text>div{border-radius:0}
 .aw9-platform-coming .aw9-platform-text>div:last-child{display:block;-webkit-line-clamp:unset;max-height:none;overflow:visible;text-overflow:clip;white-space:normal;overflow-wrap:anywhere;line-height:1.4}
+
+.aw9-platform-pending{display:flex;align-items:center;justify-content:center;width:100%;min-height:38px;padding:10px 12px;border:1px solid #58615b;border-radius:12px;background:#343d37;color:#cbd1cc;font-size:12px;font-weight:800;line-height:1.2;cursor:default}
