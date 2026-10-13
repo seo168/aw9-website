@@ -76,3 +76,7 @@
 #aw9-partners .aw9-partner-logo{width:76%;max-width:18rem;height:6rem;aspect-ratio:auto;object-fit:contain}
 #aw9-partners .aw9-partner-pending{width:76%;height:6rem;aspect-ratio:auto;font-size:2rem}
 @media(max-width:639px){#aw9-partners>section>div{height:8.5rem;padding:1.2rem}#aw9-partners .aw9-partner-logo{width:76%;max-width:12rem;height:4rem}#aw9-partners .aw9-partner-pending{height:4rem;font-size:1.8rem}}
+/* Keep coming-soon copy clear of the inherited rounded clipping mask. */
+.aw9-platform-coming .aw9-platform-text{overflow:visible}
+.aw9-platform-coming .aw9-platform-text>div{border-radius:0}
+.aw9-platform-coming .aw9-platform-text>div:last-child{display:block;-webkit-line-clamp:unset;max-height:none;overflow:visible;text-overflow:clip;white-space:normal;overflow-wrap:anywhere;line-height:1.4}
