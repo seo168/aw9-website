@@ -128,3 +128,5 @@
 .aw9-franchise-faq dt{font-weight:700;color:#f5d780;margin:18px 0 6px}
 .aw9-franchise-faq dd{margin:0;padding-bottom:14px;border-bottom:1px solid #404b42}
 @media(max-width:600px){.aw9-earn-extra-content:has(.aw9-franchise){margin-right:-40px}.aw9-franchise h4{font-size:19px}.aw9-agent-levels{grid-template-columns:1fr}.aw9-franchise th,.aw9-franchise td{padding:8px}}
+
+.aw9-agent-steps{padding-left:22px;margin:12px 0;list-style:decimal}.aw9-agent-steps li{padding-left:4px;margin:10px 0}.aw9-agent ul.aw9-agent-steps{list-style:disc}
