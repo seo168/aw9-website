@@ -94,3 +94,6 @@
 }
 
 .aw9-launch-content>.aw9-popup-brand{font-size:5cqw;font-weight:800;color:#ffe39b;line-height:1.2;text-align:center}
+
+.aw9-market-intro{margin-top:8px;color:#c8c8c8;font-size:14px;line-height:1.5}
+@media(min-width:1281px){.aw9-market-intro{font-size:20px}}
