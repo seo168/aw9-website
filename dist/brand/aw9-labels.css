@@ -109,3 +109,22 @@
 .aw9-earn-extra[open] .aw9-earn-chevron{transform:rotate(180deg)}
 .aw9-earn-extra-content{margin-top:12px;border-top:1px solid #48534b;padding-top:12px;min-height:32px}
 @media(min-width:1281px){.aw9-earn-card{padding:16px 60px 16px 16px;min-height:21.2rem}.aw9-earn-original{min-height:18rem}.aw9-earn-extra>summary{top:calc(10.6rem - 16px)}}
+
+/* Franchise rules: readable text and locally scrollable tables on narrow screens. */
+.aw9-franchise{font-size:14px;line-height:1.65;color:#d5ddd7;overflow-wrap:anywhere;text-align:left}
+.aw9-franchise h4{font-size:22px;color:#b2ef56;font-weight:800;margin:4px 0 12px}
+.aw9-franchise h5{font-size:18px;color:#f5d780;font-weight:700;margin:24px 0 10px}
+.aw9-franchise p{margin:10px 0}
+.aw9-franchise-table{max-width:100%;overflow-x:auto;margin:18px 0;border:1px solid #515d50;border-radius:10px}
+.aw9-franchise table{width:100%;border-collapse:collapse;font-size:13px}
+.aw9-franchise caption{text-align:left;padding:12px;color:#f5d780;font-weight:700;background:#202722}
+.aw9-franchise th,.aw9-franchise td{padding:10px 12px;border-top:1px solid #404b42;text-align:left;min-width:80px}
+.aw9-franchise thead{background:#2e382f;color:#eef5e9}
+.aw9-franchise tbody th{font-weight:500}
+.aw9-agent-levels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:0;list-style:none}
+.aw9-agent-levels li{padding:12px;border:1px solid #515d50;border-radius:10px;background:#202722}
+.aw9-agent-levels strong,.aw9-agent-levels span{display:block}
+.aw9-agent-levels strong{color:#f5d780;margin-bottom:6px}
+.aw9-franchise-faq dt{font-weight:700;color:#f5d780;margin:18px 0 6px}
+.aw9-franchise-faq dd{margin:0;padding-bottom:14px;border-bottom:1px solid #404b42}
+@media(max-width:600px){.aw9-earn-extra-content:has(.aw9-franchise){margin-right:-40px}.aw9-franchise h4{font-size:19px}.aw9-agent-levels{grid-template-columns:1fr}.aw9-franchise th,.aw9-franchise td{padding:8px}}
