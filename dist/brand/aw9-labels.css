@@ -154,3 +154,7 @@
 /* Collapse the unused social-link tray instead of reserving empty space. */
 #BrandNews .aw9-social-links:not(:has(img)){display:none}
 #BrandNews + #aw9-partners>div:first-child{margin-top:18px}
+
+/* Let mobile game descriptions determine the carousel height. */
+.aw9-game-brief-mobile .swiper-slide{height:auto}
+.aw9-game-brief-mobile .swiper-slide>div{height:auto;padding-bottom:16px}
