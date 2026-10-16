@@ -158,3 +158,13 @@
 /* Let mobile game descriptions determine the carousel height. */
 .aw9-game-brief-mobile .swiper-slide{height:auto}
 .aw9-game-brief-mobile .swiper-slide>div{height:auto;padding-bottom:16px}
+
+/* Clear, touch-friendly expand controls for partnership cards. */
+.aw9-earn-original{position:relative;padding-right:52px}
+.aw9-earn-extra>summary{width:44px;height:44px;right:12px;top:28px;border:1px solid #a6ed48;border-radius:12px;background:linear-gradient(145deg,#b8f34a,#68db28);color:#152310;box-shadow:0 3px 9px #0005,inset 0 1px 0 #e6ffab;transition:background .18s,box-shadow .18s}
+.aw9-earn-extra>summary:hover{background:#c2ff62;box-shadow:0 4px 12px #0007}
+.aw9-earn-extra>summary:active{background:#8de335;box-shadow:inset 0 2px 5px #0003}
+.aw9-earn-chevron{display:block;width:10px;height:10px;font-size:0;border-right:2.5px solid currentColor;border-bottom:2.5px solid currentColor;transform:translateY(-3px) rotate(45deg);transition:transform .2s}
+.aw9-earn-extra[open] .aw9-earn-chevron{transform:translateY(3px) rotate(225deg)}
+@media(min-width:1281px){.aw9-earn-extra>summary{right:16px;top:calc(10.6rem - 22px)}}
+@media(prefers-reduced-motion:reduce){.aw9-earn-chevron,.aw9-earn-extra>summary{transition:none}}
