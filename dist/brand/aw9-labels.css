@@ -168,3 +168,8 @@
 .aw9-earn-extra[open] .aw9-earn-chevron{transform:translateY(3px) rotate(225deg)}
 @media(min-width:1281px){.aw9-earn-extra>summary{right:16px;top:calc(10.6rem - 22px)}}
 @media(prefers-reduced-motion:reduce){.aw9-earn-chevron,.aw9-earn-extra>summary{transition:none}}
+
+/* Keep searchable banner copy below the artwork, never over it. */
+#Home .swiper-slide{display:flex;flex-direction:column;height:auto}
+.aw9-banner-caption{position:static;transform:none;flex:none;width:calc(100% - 24px);max-width:720px;margin:10px auto 24px}
+@media(min-width:1281px){#Home .swiper-slide{height:auto}#Home .swiper-slide>img{height:clamp(420px,60vh,560px);flex:none;object-fit:contain}}
