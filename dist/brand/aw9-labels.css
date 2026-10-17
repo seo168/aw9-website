@@ -173,3 +173,10 @@
 #Home .swiper-slide{display:flex;flex-direction:column;height:auto}
 .aw9-banner-caption{position:static;transform:none;flex:none;width:calc(100% - 24px);max-width:720px;margin:10px auto 24px}
 @media(min-width:1281px){#Home .swiper-slide{height:auto}#Home .swiper-slide>img{height:clamp(420px,60vh,560px);flex:none;object-fit:contain}}
+
+#BrandNews .aw9-social-links{display:flex;flex-wrap:wrap;gap:16px;background:transparent;margin-top:16px;padding:8px 0 24px}
+.aw9-social-item{margin:0;display:flex;flex-direction:column;align-items:center;gap:7px;color:#dedede;font-size:11px;line-height:1.3}
+.aw9-social-icon{width:44px;height:44px;border-radius:13px;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 8px #0004;border:1px solid #ffffff30}
+.aw9-social-icon img{width:24px;height:24px;object-fit:contain}
+.aw9-social-telegram{background:#229ed9}.aw9-social-whatsapp{background:#168b45}.aw9-social-facebook{background:#1877f2}.aw9-social-instagram{background:linear-gradient(35deg,#f9ce34,#ee2a7b,#6228d7)}.aw9-social-x{background:#090909}
+@media(max-width:360px){#BrandNews .aw9-social-links{gap:10px}.aw9-social-item{font-size:10px}.aw9-social-icon{width:40px;height:40px}}
