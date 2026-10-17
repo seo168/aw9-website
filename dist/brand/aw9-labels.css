@@ -180,3 +180,7 @@
 .aw9-social-icon img{width:24px;height:24px;object-fit:contain}
 .aw9-social-telegram{background:#229ed9}.aw9-social-whatsapp{background:#168b45}.aw9-social-facebook{background:#1877f2}.aw9-social-instagram{background:linear-gradient(35deg,#f9ce34,#ee2a7b,#6228d7)}.aw9-social-x{background:#090909}
 @media(max-width:360px){#BrandNews .aw9-social-links{gap:10px}.aw9-social-item{font-size:10px}.aw9-social-icon{width:40px;height:40px}}
+
+.aw9-hero-picture{display:block;width:100%;flex:none}.aw9-hero-picture>img{display:block;width:100%;height:auto}
+/* Full-width landscape desktop banner matching the reference proportions. */
+@media(min-width:1024px){#Home .swiper-slide{height:auto}#Home .aw9-hero-picture>img{width:100%;height:auto;aspect-ratio:1748/900;object-fit:contain}}
