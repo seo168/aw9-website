@@ -184,3 +184,8 @@
 .aw9-hero-picture{display:block;width:100%;flex:none}.aw9-hero-picture>img{display:block;width:100%;height:auto}
 /* Full-width landscape desktop banner matching the reference proportions. */
 @media(min-width:1024px){#Home .swiper-slide{height:auto}#Home .aw9-hero-picture>img{width:100%;height:auto;aspect-ratio:1748/900;object-fit:contain}}
+
+/* Restrained social branding to match the dark site palette. */
+#BrandNews .aw9-social-icon{background:#252b28;border:1px solid #414c45;box-shadow:none;border-radius:12px}
+#BrandNews .aw9-social-icon img{opacity:.85}
+#BrandNews .aw9-social-item{color:#b9c2bc;font-weight:500}
