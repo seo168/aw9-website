@@ -196,3 +196,6 @@
 
 #AppDownload{scroll-margin-top:110px}
 @media(max-width:1280px){#AppDownload{scroll-margin-top:72px}}
+
+.aw9-launch-content>.aw9-popup-brand{display:flex;align-items:center;justify-content:center;gap:2cqw}
+.aw9-popup-brand-logo{display:block;width:9cqw;height:9cqw;object-fit:contain;flex:none}
