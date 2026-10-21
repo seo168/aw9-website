@@ -3,7 +3,9 @@ import os,re,shutil
 root=Path(__file__).resolve().parents[1]
 repo=os.environ.get('GITHUB_REPOSITORY','seo168/aw9-website')
 owner,name=repo.split('/')
-base='/' if name==owner+'.github.io' else '/'+name+'/'
+domain_file=root/'dist'/'CNAME'
+domain=domain_file.read_text().strip() if domain_file.exists() else ''
+base='/' if domain or name==owner+'.github.io' else '/'+name+'/'
 site=root/'_site'
 if site.exists():shutil.rmtree(site)
 shutil.copytree(root/'dist',site)
