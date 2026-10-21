@@ -191,3 +191,5 @@
 #BrandNews .aw9-social-item{color:#b9c2bc;font-weight:500}
 
 .aw9-invitation-wheel{margin:20px auto;padding:16px;border:1px solid #695832;border-radius:14px;background:linear-gradient(160deg,#29251c,#1b211d)}.aw9-invitation-wheel img{display:block;width:min(100%,420px);height:auto;margin:12px auto}.aw9-invitation-wheel strong{color:#f5d780}.aw9-wheel-prizes{font-size:12px;color:#c6cec8}
+
+#BrandNews a.aw9-social-item{text-decoration:none;cursor:pointer}#BrandNews a.aw9-social-item:hover .aw9-social-icon{border-color:#a6ed48;background:#303c32}#BrandNews a.aw9-social-item:focus-visible{outline:2px solid #a6ed48;outline-offset:5px;border-radius:12px}
