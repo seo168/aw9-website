@@ -2,6 +2,8 @@
 from pathlib import Path
 from html import escape as e
 import json
+from datetime import datetime
+from zoneinfo import ZoneInfo
 ROOT=Path(__file__).resolve().parents[1]
 D=ROOT/'dist'
 BASE='https://aw9-club.com'
@@ -23,7 +25,7 @@ for slug,(title,desc,body) in pages.items():
  schema={'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':BASE+'/'},{'@type':'ListItem','position':2,'name':slug.title(),'item':url}]}
  html=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)}</title><meta name="description" content="{e(desc)}"><meta name="robots" content="index, follow"><link rel="canonical" href="{url}"><link rel="icon" href="/global/192.png"><meta property="og:type" content="website"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{BASE}/brand/aw9-share-1000-oct22.png"><link rel="stylesheet" href="/brand/support-pages.css"><script type="application/ld+json">{json.dumps(schema)}</script></head><body><header><a href="/"><img src="/brand/aw9-symbol.png" alt="" width="42" height="42">AW9</a><nav aria-label="Main navigation">{nav}</nav></header><main><p class="crumb"><a href="/">Home</a> / {slug.title()}</p><h1>{e(title)}</h1>{body}</main><footer><strong>Explore AW9</strong><nav aria-label="Related pages">{nav}</nav><p><a href="/">Return to the AW9 homepage</a></p></footer></body></html>'''
  if slug=='download':
-  launch_script='<script>function updateLaunch(){const a=document.querySelector(`a[href="https://apk-6037.arsaas-manage.workers.dev?domain=yyfzfnud.com"]`);if(!a)return;let note=a.parentElement.querySelector(".launch-note");if(!note){note=document.createElement("p");note.className="launch-note";a.before(note)}const pending=Date.now()<1793903400000;a.hidden=pending;a.style.display=pending?"none":"inline-block";note.textContent=pending?"Launching 6 November 2026 at 00:00 IST. Download opens at launch.":"AW9APP is now online."}updateLaunch();setInterval(updateLaunch,1000);</script>'
+  launch_script="<script>const launches=LAUNCH_DATA;function updateLaunch(){for(const item of launches){const a=Array.from(document.querySelectorAll('a.button')).find(a=>a.getAttribute('href')===item.url);if(!a)continue;let note=a.parentElement.querySelector('.launch-note');if(!note){note=document.createElement('p');note.className='launch-note';a.before(note)}const pending=Date.now()<item.at*1000;a.hidden=pending;a.style.display=pending?'none':'inline-block';note.textContent=pending?'Launching '+item.label+'. Download opens at launch.':item.name+' is now online.'}}updateLaunch();setInterval(updateLaunch,1000);</script>".replace('LAUNCH_DATA',json.dumps([{'url':a['app_download'],'at':a['online_time'],'name':a['app_name'],'label':datetime.fromtimestamp(a['online_time'],ZoneInfo('Asia/Kolkata')).strftime('%d %B %Y at %H:%M IST')} for a in config['app_list'] if a.get('online_time',0)>0]))
   html=html.replace('</body>',launch_script+'</body>')
  (folder/'index.html').write_text(html)
 (D/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'  <url><loc>{BASE}/{path}</loc></url>\n' for path,_ in links)+'</urlset>\n')
